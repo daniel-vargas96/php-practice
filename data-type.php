@@ -83,3 +83,19 @@ $d = true;
 var_dump($d);
 ?>
 <!-- Output: int(1) float(1.5) string(10) "I Love PHP" bool(true) -->
+
+<!-- PHP Constant -->
+
+<!-- Define constant- A constant is a variable whose value cannot be
+changed at runtime.
+Suppose we are developing a program that uses the value of
+PI 3.14, we can use a constant to store its value.
+Let’s now look at an example that defines a constant.
+define('PI',3.14); //creates a constant with a value of 3.14
+Once you define PI as 3.14 , writing a code like below will
+generate an error PI = 4; //PI has been defined as a constant
+therefore assigning a value is not permissible. -->
+
+<!-- Exclusive or logical operator -->
+
+<!-- X xor y:	Exclusive or, xor -	Returns true if only x is true or only y is true	1 xor 1;1 xor 0;	False or 0True or 1 -->
