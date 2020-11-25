@@ -98,3 +98,60 @@ echo $film["comedy"][0];
 
 <!-- PHP Array Functions -->
 
+<!-- Count function
+  The count function is used to count the number of elements
+  that an php array contains. The code below shows the
+  implementation.
+ -->
+
+<?php
+$lecturers = array("Mr. Jones", "Mr. Banda", "Mrs. Smith");
+echo count($lecturers);
+?>
+
+<!-- is_array function -->
+
+<?php
+$lecturers = array("Mr. Jones", "Mr. Banda", "Mrs. Smith");
+echo is_array($lecturers);
+?>
+
+<!-- Sort -->
+<!-- This function is used to sort arrays by the values.
+If the values are alphanumeric, it sorts them in alphabetical order.
+If the values are numeric, it sorts them in ascending order.
+It removes the existing access keys and add new numeric keys.
+The output of this function is a numeric array -->
+
+<?php
+$persons = array("Mary" => "Female", "John" => "Male", "Mirriam" => "Female");
+
+sort($persons);
+
+print_r($persons);
+?>
+
+<!-- ksort -->
+<!-- This function is used to sort the array using the key.
+The following example illustrates its usage. -->
+<?php
+  $persons = array("Mary" => "Female", "John" => "Male", "Mirriam" => "Female");
+
+  ksort($persons);
+
+  print_r($persons);
+?>
+
+<!-- asort -->
+<!-- This function is used to sort the array using the values.
+The following example illustrates its usage. -->
+
+<?php
+
+$persons = array("Mary" => "Female", "John" => "Male", "Mirriam" => "Female");
+
+asort($persons);
+
+print_r($persons);
+
+?>
